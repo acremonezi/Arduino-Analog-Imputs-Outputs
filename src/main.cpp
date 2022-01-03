@@ -1,9 +1,20 @@
 #include <Arduino.h>
+#include "main.h"
 
 void setup() {
-  // put your setup code here, to run once:
+  
+  Serial.begin(9600);         // Start Serial Communication  
+  pinSettings();              // Pin Settings Setup
+
 }
 
+
 void loop() {
-  // put your main code here, to run repeatedly:
+
+  // Main Functions
+    joysticksRead();          // Read Joysticks Positions
+
+  // Debug Functions
+    joysticksPrint();         // Print Joysticks Data
+ 
 }
