@@ -20,9 +20,9 @@ void joysticksPrint() {
 
   Serial.print("J1 -- ");
   Serial.print("X: ");
-  Serial.print(joystick1xValue);
+  Serial.print(joystick1xValue, DEC);
   Serial.print(" | Y: ");
-  Serial.println(joystick1yValue);
+  Serial.println(joystick1yValue, DEC);
 
   delay(1000);
 
